@@ -1,5 +1,11 @@
-$AZUREDEVOPS_PAT = '*****'
-      $GITHUB_PAT = '****'
+param(
+      [Parameter()]
+      [string]$GitHubDestinationPAT,
+
+      [Parameter()]
+      [string]$ADOSourcePAT
+)
+# Write your PowerShell commands here.
       Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
       Write-Host ' reflect Azure Devops repo changes to GitHub repo '
       Write-Host ' - - - - - - - - - - - - - - - - - - - - - - - - -'
